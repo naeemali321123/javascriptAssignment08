@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JS Assignment-08</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>
+            Saylani Mass Training IT-Program----Web & Mobile App Development Course<br> JavaScript Assignment-08
+        </h1>
+        <!-- 1. Write a JavaScript function to check whether an `input` is a date object or not. -->
+        <H2>
+            Program # 01: <br><br> Write a JavaScript function to check whether an `input` is a date object or not.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    Current Date is
+                </h1>
+                <form action="">
+                </form>
+                <H1 id="q01ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="checkDateObject()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+
+        <!-- 2. Write a JavaScript function to get the current date.   
+             Note : Pass a separator as an argument. -->
+        <H2>
+            Program # 02: <br><br> 2. Write a JavaScript function to get the current date.<br> Note : Pass a separator as an argument.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    Pass a separator as an argument. in Date Object
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q02ClearResultScreen()">
+                </form>
+                <H1 id="q02ResultScreen">
+                    Negative Elements is:
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="dateInSeparatorAsAnArgument ()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+
+        <!-- 3. Write a js program to find sum of all array elements.  -->
+
+        <H2>
+            Program # 03: <br><br> Write a js program to find sum of all array elements.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Array is: [1, 22, 35, 24, 55, 26, 75, 28, 95, 210, 511, 212, 513, 214, 515]
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q03ClearResultScreen()">
+                </form>
+                <H1 id="q03ResultScreen">
+                    Sum of Array Numbers is:
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="sumAllArrayNumbers()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 4. Write a js program to find maximum and minimum element in an array. -->
+        <H2>
+            Program # 04: <br><br> Write a js program to find maximum and minimum element in an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Array is: [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, 212, 513, 214, 515]
+                </h1>
+
+                <form action="">
+                    <input type="reset" onclick="q04ClearResultScreen()">
+                </form>
+                <H1 id="q04ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findMinMaxValueInArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 5. Write a js program to find second largest element in an array. -->
+        <H2>
+            Program # 05: <br><br> Write a js program to find second largest element in an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Array is: [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, 212, 513, 214, 515]
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q05ClearResultScreen()">
+                </form>
+                <H1 id="q05ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findSecondLargestElement()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 6. Write a js program to count total number of even and odd elements in an array. -->
+        <H2>
+            Program # 06: <br><br> Write a js program to count total number of even and odd elements in an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Array is: [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, 212, 513, 214, 515]
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q06ClearResultScreen()">
+                </form>
+                <H1 id="q06ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findEvenAndOdenNumbers()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 7. Write a js program to count total number of negative elements in an array. -->
+        <H2>
+            Program # 07: <br><br> Write a js program to count total number of negative elements in an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Array is: [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, -212, 513, 214, -515]
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q07ClearResultScreen()">
+                </form>
+                <H1 id="q07ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findAndCountNegativeNumbers()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 08. Write a js program to copy all elements from an array to another array. -->
+        <H2>
+            Program # 08: <br><br> Write a js program to copy all elements from an array to another array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Array is: [41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, -212, 513, 214, -515];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q08ClearResultScreen()">
+                </form>
+                <H1 id="q08ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="copyElementToAnotherArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 09. Write a js program to insert an element in an array. -->
+        <H2>
+            Program # 09: <br><br> Write a js program to insert an element in an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q09Num1" type="text" placeholder="Enter an Element"><br>
+                    <input type="reset" onclick="q09ClearResultScreen()">
+                </form>
+                <H1 id="q09ResultScreen">
+                    The Array Element is: 41, -222, 35, 24, 55, -26, 755, 28, -95, 210, 511, -212, 513, 214, -515
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="insertElement()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 10. Write a js program to delete an element from an array at specified position. -->
+        <H2>
+            Program # 10: <br><br> Write a js program to delete an element from an array at specified position.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <form action="">
+                    <input id="q10Num1" type="text" placeholder="Enter an Element"><br>
+                    <input type="reset" onclick="q10ClearResultScreen()">
+                </form>
+                <H1 id="q10ResultScreen">
+                    The current Array Elements is: 41,-222,35,24,55,-26,755,28,-95,210,511,-212,513,214,-515
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="deleteElement()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 11. Write a js program to count frequency of each element in an array. -->
+        <H2>
+            Program # 11: <br><br> Write a js program to count frequency of each element in an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    [41, 35, 24, 55, 755, 24, 210, 55, 35, 41]
+                </h1>
+                <form action="">
+                    <input id="q11Num1" type="text" placeholder="Enter an Element"><br>
+                    <input type="reset" onclick="q11ClearResultScreen()">
+                </form>
+                <H1 id="q11ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="countFrequancyElements()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 12. Write a js program to print all unique elements in the array. -->
+        <H2>
+            Program # 12: <br><br> Write a js program to print all unique elements in the array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    [41, 35, 24, 55, 755, 24, 210, 55, 35, 41]
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q12ClearResultScreen()">
+                </form>
+                <H1 id="q12ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findUniqueElements()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 13. Write a js program to count total number of duplicate elements in an array. -->
+        <H2>
+            Program # 13: <br><br> Write a js program to count total number of duplicate elements in an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    [41, 35, 24, 55, 755, 24, 24, 210, 55, 35, 41]
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q13ClearResultScreen()">
+                </form>
+                <h1 id="q13ResultScreen">
+                    Result Screen
+                </h1>
+            </div>
+            <button id="actionPerformBtn" onclick="countTotalNumberOfDuplicateElements()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!-- 14. Write a js program to delete all duplicate elements from an array. -->
+        <H2>
+            Program # 14: <br><br> Write a js program to delete all duplicate elements from an array. <br>
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    Current Array is: [41, 35, 24, 55, 755, 24, 24, 210, 55, 35, 41];
+                </h1>
+
+                <form>
+                    <input type="reset" onclick="q14ClearResultScreen()">
+                </form>
+                <H1 id="q14ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="deleteDuplicateElements()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+
+        <!-- 15. Write a js program to merge two array to third array. -->
+        <H2>
+            Program # 15: <br><br> Write a js program to merge two array to third array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    1st Current Array is: [41, 35, 24, 55, 755, 24];
+                    <br><br> 2nd Current Array is: [81, 35, 28, 55, 75, 28];
+                </h1>
+                <form>
+                    <input type="reset" onclick="q15ClearResultScreen()">
+                </form>
+                <H1 id="q15ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="mergeElementsOfTwoArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--16. Write a js program to find reverse of an array. -->
+
+        <H2>
+            Program # 16: <br><br> Write a js program to find reverse of an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q16ClearResultScreen()">
+                </form>
+                <H1 id="q16ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+
+        <!--17. Write a js program to put even and odd elements of array in two separate array. -->
+        <H2>
+            Program # 17: <br><br> Write a js program to put even and odd elements of array in two separate array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24, 32, 210, 41, 55, 35, 41];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q17ClearResultScreen()">
+                </form>
+                <H1 id="q17ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="seprateOddAndEvenElement()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--18. Write a js program to search an element in an array. -->
+
+        <H2>
+            Program # 18: <br><br> Write a js program to search an element in an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24, 32, 210, 41, 55, 35, 41];
+                </h1>
+                <form action="">
+                    <input id="q18Num1" type="text" placeholder="Enter an Element"><br>
+                    <input type="reset" onclick="q18ClearResultScreen()">
+                </form>
+                <H1 id="q18ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="searchAnElement()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--19. Write a js program to sort array elements in ascending or descending order. -->
+
+        <H2>
+            Program # 19: <br><br> Write a js program to sort array elements in ascending or descending order.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q19ClearResultScreen()">
+                </form>
+                <H1 id="q19ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="sortedArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--20. Write a js program to sort even and odd elements of array separately. -->
+
+        <H2>
+            Program # 20: <br><br> Write a js program to sort even and odd elements of array separately.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [1,2,3,4,5,6,7,8,9,10]
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q20ClearResultScreen()">
+                </form>
+                <H1 id="q20ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="sortedArrayEvenAndOdd()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--21. Write a js program to left rotate an array. -->
+
+        <H2>
+            Program # 21: <br><br> Write a js program to left rotate an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [⤜ 💔 ♥ ❤ ⯁]
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q21ClearResultScreen()">
+                </form>
+                <H1 id="q21ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="leftRotateArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--22. Write a js program to right rotate an array. -->
+
+        <H2>
+            Program # 22: <br><br> Write a js program to right rotate an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [⤜ 💔 ♥ ❤ ⯁];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q22ClearResultScreen()">
+                </form>
+                <H1 id="q22ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="rightRotateArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--23. Write a js program to print day of week name using switch case. -->
+
+        <H2>
+            Program # 23: <br><br> Write a js program to print day of week name using switch case.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    <label for="q23num1">Plz Enter Weed Day #</label>
+                </h1>
+                <form action="">
+                    <input type="number" placeholder="Plz Enter Weed Day #" id="q23Num1">
+                    <input type="reset" onclick="q23ClearResultScreen()">
+                </form>
+                <H1 id="q23ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="weekDayName()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--24. Write a js program to find reverse of an array. -->
+
+        <H2>
+            Program # 24: <br><br> Write a js program to find reverse of an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q24ClearResultScreen()">
+                </form>
+                <H1 id="q24ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--25. Write a js program to find reverse of an array. -->
+
+        <H2>
+            Program # 25: <br><br> Write a js program to find reverse of an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q25ClearResultScreen()">
+                </form>
+                <H1 id="q25ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--26. Write a js program to find reverse of an array. -->
+
+        <H2>
+            Program # 26: <br><br> Write a js program to find reverse of an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q26ClearResultScreen()">
+                </form>
+                <H1 id="q26ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--27. Write a js program to find reverse of an array. -->
+
+        <H2>
+            Program # 27: <br><br> Write a js program to find reverse of an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q27ClearResultScreen()">
+                </form>
+                <H1 id="q27ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--28. Write a js program to find reverse of an array. -->
+
+        <H2>
+            Program # 28: <br><br> Write a js program to find reverse of an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q28ClearResultScreen()">
+                </form>
+                <H1 id="q28ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--29. Write a js program to find reverse of an array. -->
+
+        <H2>
+            Program # 29: <br><br> Write a js program to find reverse of an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q29ClearResultScreen()">
+                </form>
+                <H1 id="q29ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+        <!--30. Write a js program to find reverse of an array. -->
+
+        <H2>
+            Program # 30: <br><br> Write a js program to find reverse of an array.
+        </H2>
+        <div id="jsProgramSection">
+            <div id="userValue">
+                <h1>
+                    The Current Array is: [41, 35, 24, 55, 755, 24, 4];
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q30ClearResultScreen()">
+                </form>
+                <H1 id="q30ResultScreen">
+                    Result Screen
+                </H1>
+            </div>
+            <button id="actionPerformBtn" onclick="findReverseOfArray()">
+                Action Perform
+            </button>
+        </div>
+        <hr>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</html>
