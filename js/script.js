@@ -60,10 +60,19 @@ function q29ClearResultScreen() { document.getElementById("q29ResultScreen").inn
 function q30ClearResultScreen() { document.getElementById("q30ResultScreen").innerHTML = "Result Screen "; }
 
 
-// 01. Write a js program to read and print elements of array.
+// 01. Write a JavaScript function to check whether an `input` is a date object or not.
 function checkDateObject() {
-    var currentDate = new Date()
-
+    var is_date = function(input) {
+        if ( Object.prototype.toString.call(input) === "[object Date]" ) 
+          return true;
+        return false;   
+          };
+      
+      console.log(is_date("October 13, 2014 11:13:00"));
+      console.log(is_date(new Date(86400000)));
+      console.log(is_date(new Date(99,5,24,11,33,30,0)));
+      console.log(is_date([1, 2, 4, 0]));
+      
     document.getElementById("q01ResultScreen").innerHTML = currentDate;
 }
 //  2. Write a JavaScript function to get the current date.   
@@ -75,3 +84,15 @@ function dateInSeparatorAsAnArgument() {
 
     document.getElementById("q02ResultScreen").innerHTML = currentDate
 }
+var is_date = function(input) {
+    userInput = input
+    if ( Object.prototype.toString.call(input) === "[object Date]" ) 
+      return true;
+    return false;   
+      };
+  
+  console.log(is_date("October 13, 2014 11:13:00"),userInput);
+  console.log(is_date(new Date(86400000)),userInput);
+  console.log(is_date(new Date(99,5,24,11,33,30,0)),userInput);
+  console.log(is_date([1, 2, 4, 0]),userInput);
+  
