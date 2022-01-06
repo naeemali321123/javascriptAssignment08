@@ -61,38 +61,27 @@ function q30ClearResultScreen() { document.getElementById("q30ResultScreen").inn
 
 
 // 01. Write a JavaScript function to check whether an `input` is a date object or not.
-function checkDateObject() {
-    var is_date = function(input) {
-        if ( Object.prototype.toString.call(input) === "[object Date]" ) 
-          return true;
-        return false;   
-          };
-      
-      console.log(is_date("October 13, 2014 11:13:00"));
-      console.log(is_date(new Date(86400000)));
-      console.log(is_date(new Date(99,5,24,11,33,30,0)));
-      console.log(is_date([1, 2, 4, 0]));
-      
-    document.getElementById("q01ResultScreen").innerHTML = currentDate;
+function checkDateObjects() {
+    var checkDateObject = function(input) {
+        if (Object.prototype.toString.call(input) === "[object Date]")
+            return true;
+        return false;
+    };
+
+    document.getElementById("q01ResultScreen").innerHTML =
+        checkDateObject("October 13, 2014 11:13:00") + "<br>" +
+        checkDateObject(new Date(86400000)) + "<br>" +
+        checkDateObject(new Date(99, 5, 24, 11, 33, 30, 0)) + "<br>" +
+        checkDateObject([1, 2, 4, 0]);
 }
 //  2. Write a JavaScript function to get the current date.   
 // Note : Pass a separator as an argument.
 
 function dateInSeparatorAsAnArgument() {
     // var currentDate = new Date()
-    currentDate = new Date('/');
-
-    document.getElementById("q02ResultScreen").innerHTML = currentDate
+    date = new Date();
+    document.getElementById("currentDate").innerHTML += date;
+    document.getElementById("q02ResultScreen").innerHTML =
+        date.getDate() + " / " + date.getMonth() + " / " + date.getFullYear() + "<br>" +
+        date.getDate() + " - " + date.getMonth() + " - " + date.getFullYear();
 }
-var is_date = function(input) {
-    userInput = input
-    if ( Object.prototype.toString.call(input) === "[object Date]" ) 
-      return true;
-    return false;   
-      };
-  
-  console.log(is_date("October 13, 2014 11:13:00"),userInput);
-  console.log(is_date(new Date(86400000)),userInput);
-  console.log(is_date(new Date(99,5,24,11,33,30,0)),userInput);
-  console.log(is_date([1, 2, 4, 0]),userInput);
-  

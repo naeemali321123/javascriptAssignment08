@@ -18,22 +18,27 @@
         <!-- 1. Write a JavaScript function to check whether an `input` is a date object or not. -->
         <H2>
             Program # 01: <br><br> Write a JavaScript function to check whether an `input` is a date object or not.
-            <pre>
-                Test Data :
-            console.log(is_date("October 13, 2014 11:13:00"));
-            console.log(is_date(new Date(86400000)));
-            console.log(is_date(new Date(99,5,24,11,33,30,0)));
-            console.log(is_date([1, 2, 4, 0]));
-            
-            </pre>
         </H2>
         <div id="jsProgramSection">
             <div id="userValue">
+                <h1>
+                    <pre>
+                    Test Current Data :
+                    
+                    console.log(is_date("October 13, 2014 11:13:00"));
+                    console.log(is_date(new Date(86400000)));
+                    console.log(is_date(new Date(99,5,24,11,33,30,0)));
+                    console.log(is_date([1, 2, 4, 0]));
+                    </pre>
+                </h1>
+                <form action="">
+                    <input type="reset" onclick="q01ClearResultScreen()">
+                </form>
                 <H1 id="q01ResultScreen">
                     Result Screen
                 </H1>
             </div>
-            <button id="actionPerformBtn" onclick="checkDateObject()">
+            <button id="actionPerformBtn" onclick="checkDateObjects()">
                 Action Perform
             </button>
         </div>
@@ -43,17 +48,25 @@
              Note : Pass a separator as an argument. -->
         <H2>
             Program # 02: <br><br> 2. Write a JavaScript function to get the current date.<br> Note : Pass a separator as an argument.
+            <pre>
+                Test Data :
+                console.log(curday('/'));
+                console.log(curday('-'));
+                Output :
+                "11/13/2014"
+                "11-13-2014"
+                </pre>
         </H2>
         <div id="jsProgramSection">
             <div id="userValue">
-                <h1>
-                    Pass a separator as an argument. in Date Object
+                <h1 id="currentDate">
+                    If Current Date is:<br>
                 </h1>
                 <form action="">
                     <input type="reset" onclick="q02ClearResultScreen()">
                 </form>
                 <H1 id="q02ResultScreen">
-                    Negative Elements is:
+                    Result Screen
                 </H1>
             </div>
             <button id="actionPerformBtn" onclick="dateInSeparatorAsAnArgument ()">
