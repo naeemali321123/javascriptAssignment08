@@ -62,7 +62,7 @@ function q30ClearResultScreen() { document.getElementById("q30ResultScreen").inn
 
 // 01. Write a JavaScript function to check whether an `input` is a date object or not.
 function checkDateObjects() {
-    var checkDateObject = function(input) {
+    var checkDateObject = function (input) {
         if (Object.prototype.toString.call(input) === "[object Date]")
             return true;
         return false;
@@ -78,10 +78,20 @@ function checkDateObjects() {
 // Note : Pass a separator as an argument.
 
 function dateInSeparatorAsAnArgument() {
-    // var currentDate = new Date()
-    date = new Date();
-    document.getElementById("currentDate").innerHTML += date;
+    var monthArr = [' Jan  ', ' Feb  ', ' Mar  ', ' Apr  ', ' May  ', ' Jun  ', ' Jul  ', ' Sep  ', ' Oct  ', ' Nov  ', ' Dec '];
+    var currentDate = new Date();
+    var date = currentDate.getDate();
+    var monthName = monthArr[currentDate.getMonth()];
+    var month = currentDate.getMonth() + 1;
+    var year = currentDate.getFullYear();
+    var slash = "/";
+    var hifen = "-";
+
+    document.getElementById("currentDate").innerHTML = "If Current Date is:<br>" + currentDate;
     document.getElementById("q02ResultScreen").innerHTML =
-        date.getDate() + " / " + date.getMonth() + " / " + date.getFullYear() + "<br>" +
-        date.getDate() + " - " + date.getMonth() + " - " + date.getFullYear();
+        date + slash + month + slash + year + "<br/>" +
+        date + slash + month + slash + year + "<br/>" +
+        date + monthName + year;
 }
+// 3. Write a JavaScript function to get the number of days in a month. 
+
