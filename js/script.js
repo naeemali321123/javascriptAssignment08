@@ -94,4 +94,3 @@ function dateInSeparatorAsAnArgument() {
         date + monthName + year;
 }
 // 3. Write a JavaScript function to get the number of days in a month. 
-
